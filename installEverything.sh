@@ -9,7 +9,7 @@ EOF
   exit 0;
 fi
 # TODO determine Mac
-# TODO determien if brew is installed
+# TODO determine if brew is installed
 # TODO determine if git is installed
 # TODO ask for root priveleges
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)";
