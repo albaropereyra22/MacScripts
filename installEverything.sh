@@ -19,7 +19,7 @@ then
 fi
 brew install git;
 brew install gh;
-gh auth login;
+#gh auth login;
 mkdir -p /opt;
 cd /opt;
 # Removed if already there.
