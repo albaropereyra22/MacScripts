@@ -12,14 +12,19 @@ fi
 # TODO determine if brew is installed
 # TODO determine if git is installed
 # TODO ask for root priveleges
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)";
+which brew;
+if [ "X1" = "X$?"];then
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)";
+fi
 brew install git;
 brew install gh;
 gh auth login;
 mkdir -p /opt;
 cd /opt;
-git clone git@github.com:albaropereyra22/MacScripts.git
-mkdir -p ~/bin
-cp /opt/MacScripts/MacDevEnv.sh ~/bin/
-chmod u+x ~/bin/MacDevEnv.sh
-sh ~/bin/MacDevEnv.sh
+# Removed if already there.
+rm -rf /opt/MacScripts;
+git clone git@github.com:albaropereyra22/MacScripts.git;
+mkdir -p ~/bin;
+cp /opt/MacScripts/MacDevEnv.sh ~/bin/;
+chmod u+x ~/bin/MacDevEnv.sh;
+sh ~/bin/MacDevEnv.sh;
