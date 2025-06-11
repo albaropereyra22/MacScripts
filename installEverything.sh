@@ -20,6 +20,6 @@ mkdir -p /opt;
 cd /opt;
 git clone git@github.com:albaropereyra22/MacScripts.git
 mkdir -p ~/bin
-cp ~/MacScripts/MacDevEnv.sh ~/bin/
+cp /opt/MacScripts/MacDevEnv.sh ~/bin/
 chmod u+x ~/bin/MacDevEnv.sh
 sh ~/bin/MacDevEnv.sh
