@@ -13,7 +13,8 @@ fi
 # TODO determine if git is installed
 # TODO ask for root priveleges
 which brew;
-if [ "X1" = "X$?"];then
+if [ "X1" = "X$?" ];
+then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)";
 fi
 brew install git;
