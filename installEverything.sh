@@ -12,14 +12,19 @@ fi
 # TODO determine if brew is installed
 # TODO determine if git is installed
 # TODO ask for root priveleges
-which brew;
+which -s brew;
 if [ "X$?" = "X1" ];
 then
+  unset HOMEBREW_BREW_GIT_REMOTE HOMEBREW_CORE_GIT_REMOTE;
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)";
 fi
 brew install git;
-brew install gh;
-#gh auth login;
+which -s gh
+if [ "X$?" = "X1" ];
+then
+  brew install gh;
+  gh auth login;
+fi
 mkdir -p /opt;
 cd /opt;
 # Removed if already there.
