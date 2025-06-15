@@ -31,10 +31,10 @@ cd /opt;
 rm -rf /opt/MacScripts;
 git clone git@github.com:albaropereyra22/MacScripts.git;
 mkdir -p ~/bin;
-cp /opt/MacScripts/MacDevEnv.sh ~/bin/;
+cp -fr /opt/MacScripts/MacDevEnv.sh -T ~/bin/;
 chmod u+x ~/bin/MacDevEnv.sh;
 sh ~/bin/MacDevEnv.sh;
 
-cp /opt/MacScripts/MacDrogonInstall.sh ~/bin/;
+cp -fr /opt/MacScripts/MacDrogonInstall.sh -T ~/bin/;
 chmod u+x ~/bin/MacDrogonInstall.sh;
 sh ~/bin/MacDrogonInstall.sh;
