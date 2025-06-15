@@ -7,6 +7,6 @@ cd /opt;
 git clone git@github.com:albaropereyra22/createDrogonProject.git;
 cd createDrogonProject;
 chmod u+x createDrogonProject.sh;
-./createDrogonProject.sh firstProject;
+./createDrogonProject.sh -n firstProject;
 dg_ctl -v;
 
