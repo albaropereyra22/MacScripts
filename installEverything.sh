@@ -34,3 +34,7 @@ mkdir -p ~/bin;
 cp /opt/MacScripts/MacDevEnv.sh ~/bin/;
 chmod u+x ~/bin/MacDevEnv.sh;
 sh ~/bin/MacDevEnv.sh;
+
+cp /opt/MacScripts/MacDrogonInstall.sh ~/bin/;
+chmod u+x ~/bin/MacDrogonInstall.sh;
+sh ~/bin/MacDrogonInstall.sh;
