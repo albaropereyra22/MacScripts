@@ -18,7 +18,11 @@ then
   unset HOMEBREW_BREW_GIT_REMOTE HOMEBREW_CORE_GIT_REMOTE;
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)";
 fi
-brew install git;
+
+if [ ! -e /opt/homebrew/bin/git ];
+then
+  brew install git;
+fi
 which -s gh
 if [ "X$?" = "X1" ];
 then
