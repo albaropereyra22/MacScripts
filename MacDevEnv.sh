@@ -3,7 +3,8 @@
 # set local
 #sudo locale-gen "en_US.UTF-8"
 #sudo dpkg-reconfigure locales
-brew install zsh emacs screen;
+brew install zsh screen;
+brew install --formula emacs;
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 cd;
 rm -rf ~/zshconf;

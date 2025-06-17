@@ -17,6 +17,8 @@ if [ "X$?" = "X1" ];
 then
   unset HOMEBREW_BREW_GIT_REMOTE HOMEBREW_CORE_GIT_REMOTE;
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)";
+  # Update every 24 hours
+  export HOMEBREW_AUTO_UPDATE_SECS="86400";
 fi
 
 if [ ! -e /opt/homebrew/bin/git ];
@@ -35,10 +37,10 @@ cd /opt;
 rm -rf /opt/MacScripts;
 git clone git@github.com:albaropereyra22/MacScripts.git;
 mkdir -p ~/bin;
-cp -fr /opt/MacScripts/MacDevEnv.sh -T ~/bin/;
+cp -fr /opt/MacScripts/MacDevEnv.sh ~/bin/;
 chmod u+x ~/bin/MacDevEnv.sh;
 sh ~/bin/MacDevEnv.sh;
 
-cp -fr /opt/MacScripts/MacDrogonInstall.sh -T ~/bin/;
+cp -fr /opt/MacScripts/MacDrogonInstall.sh  ~/bin/;
 chmod u+x ~/bin/MacDrogonInstall.sh;
 sh ~/bin/MacDrogonInstall.sh;
