@@ -17,6 +17,9 @@ if [ "X$?" = "X1" ];
 then
   unset HOMEBREW_BREW_GIT_REMOTE HOMEBREW_CORE_GIT_REMOTE;
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)";
+  echo >> /Users/$(whoami)/.zprofile                                                                           
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv zsh)"' >> /Users/$(whoami)/.zprofile
+  eval "$(/opt/homebrew/bin/brew shellenv zsh)"
   # Update every 24 hours
   export HOMEBREW_AUTO_UPDATE_SECS="86400";
 fi
