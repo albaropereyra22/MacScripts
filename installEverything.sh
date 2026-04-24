@@ -34,13 +34,13 @@ then
   brew install gh;
   gh auth login;
 fi
-mkdir -p /opt;
-cd /opt;
+mkdir -p ~/opt;
+cd ~/opt;
 # Removed if already there.
-rm -rf /opt/MacScripts;
+rm -rf ~/opt/MacScripts;
 git clone git@github.com:albaropereyra22/MacScripts.git;
 mkdir -p ~/bin;
-cp -fr /opt/MacScripts/MacDevEnv.sh ~/bin/;
+cp -fr ~/opt/MacScripts/MacDevEnv.sh ~/bin/;
 chmod u+x ~/bin/MacDevEnv.sh;
 sh ~/bin/MacDevEnv.sh;
 
