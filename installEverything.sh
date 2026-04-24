@@ -44,6 +44,6 @@ cp -fr ~/opt/MacScripts/MacDevEnv.sh ~/bin/;
 chmod u+x ~/bin/MacDevEnv.sh;
 sh ~/bin/MacDevEnv.sh;
 
-cp -fr /opt/MacScripts/MacDrogonInstall.sh  ~/bin/;
+cp -fr ~/opt/MacScripts/MacDrogonInstall.sh  ~/bin/;
 chmod u+x ~/bin/MacDrogonInstall.sh;
 sh ~/bin/MacDrogonInstall.sh;
