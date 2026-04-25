@@ -32,10 +32,10 @@ then
   read emailAddress;
   git config --global user.email "emailAddress";
   # set the default conflict resolution.
-  git config pull.rebase false;
-	# set default branch to main since git now complains if it is master.
-	defaultBranch=main;
-	git config --global init.defaultBranch $defaultBranch;  
+  git config --global pull.rebase false;
+  # set default branch to main since git now complains if it is master.
+  defaultBranch=main;
+  git config --global init.defaultBranch $defaultBranch;  
 fi
 which -s gh
 if [ "X$?" = "X1" ];
