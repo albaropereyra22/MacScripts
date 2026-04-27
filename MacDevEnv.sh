@@ -5,6 +5,7 @@
 #sudo dpkg-reconfigure locales
 brew install zsh screen;
 brew install --formula emacs;
+brew install bat;
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 cd;
 rm -rf ~/zshconf;
